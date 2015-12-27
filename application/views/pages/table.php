@@ -195,65 +195,55 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
-
-                <!-- Page Heading -->
-                <div class="row">
-
-                    <div class="col-lg-10">
-                        <div class="widget">
-
-                            <div class="main-header">
-                            <h2>Create PPMP</h2>
-                            <em>Form to make a new ppmp etc</em>
-                            </div>
-                                
-                                <!-- CREATE FORM -->    
-                                <table class="table table-bordered table-responsive">
-                                <tr>
-                                    <br/>
-                                    <div class="btn-group">
-                                       <h5><b>Unit/Department: </b></h5>
-                                          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Unit <span class="caret"></span></button>
-                                            <ul class="dropdown-menu pull-top pull-right">
-                                              <li><input type="radio" id="ID" name="" value=""><label for="">Math Department</label></li>
-                                              <!-- Other items -->
-                                            </ul>
-                                    </div>
-                                    <br/>
-                                    <br/>
-                                    <form class="well">
-                                          <label> Project/Title</label>
-                                          <input type="text" class="span5" placeholder=" Enter Project/Title">
-                                    </form>  
-                                </tr>
-                                <tr>
-                                    <th>Items and Specifications</th>
-                                </tr>
-                                <tr>
-                                      <td>
-                                      <div class="btn-group">
-                                       <h5><b>Category: </b></h5>
-                                          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Category <span class=" caret "></span></button>
-                                            <ul class="dropdown-menu pull-top pull-right">
-                                              <li><input type="radio" id="ID" name="NAME" value="VALUE"><label for="ID"> Services</label></li>
-                                              <li><input type="radio" id="ID" name="NAME" value="VALUE"><label for="ID"> Supplies & Materials</label></li>
-                                              <li><input type="radio" id="ID" name="NAME" value="VALUE"><label for="ID"> Equipment</label></li>
-                                              <!-- Other items -->
-                                            </ul>
-                                        </div>
-                                        </td>    
-                                </tr>
-                                <tr>
-                                      <td>Data 1</td>
-                                </tr>
-                                </table>
-                                <!-- END CREATE FORM -->
-                    </div>
-                </div>
-                <!-- /.row -->
+                <h2>Create PPMP</h2>
+                <p><br/></p>            
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Specification/Items</th>
+                        <th>Unit</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="col-xs-2"><div class="btn-group"><button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Category <span class="caret"></span></button>
+                        <ul class="dropdown-menu noclose">
+                          <li><input type="radio" id="" name="" value=""><label for=""> Cat 1</label></li>
+                          <li><input type="radio" id="" name="" value=""><label for=""> Cat 2</label></li>
+                          <li><input type="radio" id="" name="" value=""><label for=""> Cat 3</label></li>
+                          <!-- Other items -->
+                        </ul></div></td>
+                        
+                        <td class="col-xs-3"><div class="btn-group"><button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Items <span class="caret"></span></button>
+                        <ul class="dropdown-menu noclose">
+                          <li><input type="radio" id="" name="" value=""><label for=""> Item 1</label></li>
+                          <li><input type="radio" id="" name="" value=""><label for=""> Item 2</label></li>
+                          <li><input type="radio" id="" name="" value=""><label for=""> Item 3</label></li>
+                          <!-- Other items -->
+                        </ul></div></td>
+                        
+                        <td class="col-xs-1">
+                         <input class="form-control" id="ex2" type="text"></td>
+                       
+                        <td class="col-xs-1">
+                         <input class="form-control" id="ex2" type="text"></td>
+                       
+                        <td class="col-xs-2">
+                         <input class="form-control" id="ex2" type="text"></td>
+                      
+                        <td class="col-xs-2">
+                         <input class="form-control" id="ex2" type="text"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
 
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.container -->
 
         </div>
         <!-- /#page-wrapper -->

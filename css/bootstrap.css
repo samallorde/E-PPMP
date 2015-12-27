@@ -3702,7 +3702,7 @@ tbody.collapse.in {
 }
 .btn-group-justified > .btn,
 .btn-group-justified > .btn-group {
-  display: table-cell;
+  display: -cell;
   float: none;
   width: 1%;
 }
