@@ -35,4 +35,14 @@ class Main_model extends CI_Model {
 			return NULL;
 		}
 	}
+
+	function getOffice($office_id){
+		$query = $this->db->query('SELECT * FROM office WHERE sub_id = "'. $sub_id .'"');
+		if($query->num_rows() > 0){
+			return $query->result();
+		}
+		else{
+			return NULL;
+		}
+	}
 }

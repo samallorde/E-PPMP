@@ -29,7 +29,7 @@
 	<div class="formlogin">		
 		<div class="row container">
 			<div class="col-sm-6 col-md-offset-3">
-				<form class="form-horizontal">
+				<form class="form-horizontal" method ="POST" action="<?php echo base_url('login.php')?>">
 					
 					<div class="form-group">
 						<div class="col-sm-12">

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Create</title>
+    <title>Table</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -196,7 +196,13 @@
 
             <div class="container-fluid">
                 <h2>Create PPMP</h2>
-                <p><br/></p>            
+                    <!--p>Department/Unit:<select name="" >
+                            <?foreach($office as $object) { ?>
+                              <option value="<?php echo $post->device_type;?>"><?php echo $post->device_type;?></option>
+                            <? }?>
+                          </select><br/>
+                    Brand:<select name="brand" ></p-->            
+                  
                   <table class="table table-bordered">
                     <thead>
                       <tr>
@@ -210,20 +216,28 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="col-xs-2"><div class="btn-group"><button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Category <span class="caret"></span></button>
+                        <td class="col-xs-3"><div class="btn-group"><button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Category <span class="caret"></span></button>
                         <ul class="dropdown-menu noclose">
-                          <li><input type="radio" id="" name="" value=""><label for=""> Cat 1</label></li>
-                          <li><input type="radio" id="" name="" value=""><label for=""> Cat 2</label></li>
-                          <li><input type="radio" id="" name="" value=""><label for=""> Cat 3</label></li>
-                          <!-- Other items -->
+                          <?php
+
+                            if(is_array($category) || is_object($category)){
+                                foreach($category as $object){
+                                    echo '<li><label>'. $object->category .'</label></li>';
+                                }
+                            }
+                          ?>
                         </ul></div></td>
                         
                         <td class="col-xs-3"><div class="btn-group"><button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Items <span class="caret"></span></button>
                         <ul class="dropdown-menu noclose">
-                          <li><input type="radio" id="" name="" value=""><label for=""> Item 1</label></li>
-                          <li><input type="radio" id="" name="" value=""><label for=""> Item 2</label></li>
-                          <li><input type="radio" id="" name="" value=""><label for=""> Item 3</label></li>
-                          <!-- Other items -->
+                        <?php
+
+                            if(is_array($subcategory) || is_object($subcategory)){
+                                foreach($subcategory as $object){
+                                    echo '<li><label>'. $object->subcategory .'</label></li>';
+                                }
+                            }
+                          ?>  
                         </ul></div></td>
                         
                         <td class="col-xs-1">
